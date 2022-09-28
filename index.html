@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Controle de Erros</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Controle de Erros</h1>
+        <p id="subtitulo">Preencha todos os campos com atenção!</p>
+        <br>
+    </div>
+    <form>        
+            <div class="campo">
+                <label for="tecnico"><strong>Técnico</strong></label>
+                <input type="text" name="tecnico" id="tecnico" required>
+            </div>
+            <div class="campo">
+                <label for="nome"><strong>Cliente</strong></label>
+                <input type="text" name="ciente" id="cliente" required>
+            </div>        
+            <div class="campo">
+                <label for="sistema"><strong>Sistema</strong></label>
+                <select id="sistema" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Teste 1</option>
+                  <option>Teste 2</option>
+                  <option>Teste 3</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="versao"><strong>Versão</strong></label>
+                <input type="text" name="versao" id="versao" required>
+            </div>            
+        
+        <div class="campo">
+            <br>
+            <label for="descreva"><strong>Descreva o erro</strong></label>
+            <textarea rows="6" style="width: 26em" id="descreva" name="descreva"></textarea>
+        </div>
+        <button class="botao" type="submit" onsubmit="">Enviar</button>    
+    </form>
+</body>
+</html>
